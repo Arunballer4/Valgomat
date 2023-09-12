@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="no">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enkel Valgomat</title>
+        <link rel="stylesheet" href="valgomat.css">
+    </head>
+
+    <body>
+        <a href="start.html" class="return-button">gå tilbake</a>
+        <h1>Enkel Valgomat</h1>
+        <div class="container">
+            <form id="valgomatForm">
+                <h2 id="question1">Spørsmål 1</h2>
+                <label>
+                    <input type="radio" name="question1" value="option1"> Kollektiv transport
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="option2"> Eget kjøretøy
+                </label>
+
+                <h2 id="question2" style="display: none;">Spørsmål 2</h2>
+                <label>
+                    <input type="radio" name="question2" value="option1"> Mobil forbruk på skolen
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="option2"> Ingen mobilforbruk på skolen
+                </label>
+
+                <h2 id="question3" style="display: none;">Spørsmål 3</h2>
+                <label>
+                    <input type="radio" name="question3" value="option1"> Fraværsgrense
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="option2"> Ingen fraværsgrense
+                </label>
+
+                <div class="button-container">
+                    <button id="btnNext" type="button">Neste spørsmål</button>
+                    <button id="btnCalc" type="button" style="display: none;">Beregn resultat</button>
+                </div>
+            </form>
+            <div></div>
+            <h2>Ditt resultat:</h2>
+            <p id="result"></p>
+        </div>
+
+        <script src="valgomat.js"></script>
+    </body>
+
+    </html>
